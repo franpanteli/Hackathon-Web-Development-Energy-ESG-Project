@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100"
+>
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Spectral&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <title>Carbon Hackers</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body class="d-flex flex-column">
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top"> 
+          <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                  <img src="img\thunderbolt1.png" class="navbar-img" alt="energy">
+                  CarbonHackers
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link "  href="form.html">Carbon Calculator</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="offset.html">Offset</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="podcast.html">Podcasts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="chatbot.html">Carbon Chatbot</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    </header>
+    
+    <!-- Begin page content -->
+     
+    <main class="flex-shrink-0">
+      <!-- Top Section -->
+        <div class=" top-section container-fluid">
+            <h1>Calculate your Carbon Footprint!</h1>
+            <img src="img/croptrees.png" alt="Photo by Mimi Thian on Unsplash" class="img-fluid trees" height="100">
+        
+        </div>
+        <div class="p-3 container">
+          <p>Calculate your carbon emissions at the CodeNode event by completing the questions below!</p>
+            <form>
+                <div class="mb-3">
+                <label for="travel" class="form-label">How do you plan to travel to the CodeNode event?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="travel" id="car">
+                    <label class="form-check-label" for="travel1">
+                      Car
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="travel" id="public transport">
+                    <label class="form-check-label" for="travel2">
+                      Public Transport
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="travel" id="walking" checked>
+                    <label class="form-check-label" for="travel3">
+                      Walking
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                    <label for="drink-input" class="form-label">Will you bring a reusable container with you for drinks?</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="drink-input" id="disposable">
+                        <label class="form-check-label" for="drink-input">
+                          No
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="drink-input" id="reusable" checked>
+                        <label class="form-check-label" for="drink-input">
+                          Yes
+                        </label>
+                      </div>
+                </div>
+                <div class="mb-3">
+                    <label for="flexRadioDefault" class="form-label">What food will you eat at the event?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="food-option" id="meat">
+                        <label class="form-check-label" for="foodoption1">
+                          Meat Option
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="food-option" id="fish">
+                        <label class="form-check-label" for="foodoption2">
+                          Fish Option
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="food-option" id="vegetarian" checked>
+                        <label class="form-check-label" for="foodoption3">
+                          Vegetarian Option
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="flexRadioDefault" class="form-label">Are you normally too cold/ hot at similar events you have attended in the past?</label>
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="temp-option" id="cold">
+                          <label class="form-check-label" for="foodoption1">
+                            Too cold
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="temp-option" id="ok" checked>
+                          <label class="form-check-label" for="foodoption2">
+                            Ok
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="temp-option" id="hot" >
+                          <label class="form-check-label" for="tempoption3">
+                            Too hot
+                          </label>
+                        </div>
+                      </div>
+          
+                <button type="button" id="fetch-email-btn" class="btn btn-primary my-3">Submit</button>
+            <!-- Loading button -->
+            <button id="loadingButton" class="btn btn-primary mb-5" type="button" disabled>
+                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                Loading...(up to 20 seconds)
+            </button>
+            <!-- Output container -->
+            <div >
+                <div class="mb-5" id="output-container">
+                    <label for="exampleFormControlTextarea1" class="form-label text-center">Your carbon information is here!</label>
+                    <!-- <textarea class="form-control api-output mb-3" id="myInput"></textarea> -->
+                    <p class="api-output"></p>
+                </div>
+                
+                
+            </div>
+            </form>
+            
+        </div>
+        <div class="container-fluid bottom-section">
+          <div class="row row-cols-1 row-cols-md-3 g-4 p-4">
+              <!-- this is the first card (tube map) -->
+              <div class="col">
+                <div class="card">
+                  <img src="img/Tube.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Carbon Card 1: did you know?</h5>
+                    <p class="card-text">CodeNode is in the heart of London with multiple bus stops and transport links in the surrounding area. By 2050, these links will be completely carbon neutral!</p>
+                  </div>
+                </div>
+              </div>
+
+      <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> 
+      <!-- VEGAN FOOD CARBON CARD  -->
+              <div class="col">
+                <div class="card">
+                  <img src="img/Vegan-food.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Carbon Card 2: did you know?</h5>
+                    <p class="card-text">One vegetarian day per week can reduce your carbon footprint by 100kgs per year, why not have that day at CodeNode?</p>
+                  </div>
+                </div>
+              </div>
+
+       <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> 
+      <!-- TEMPARATURE CARBON CARD  -->
+
+              <div class="col">
+                <div class="card">
+                  <img src="img/Temparature.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Carbon Card 3: did you know?</h5>
+                    <p class="card-text">Male-bodied people prefer spaces which are 3 degrees cooler on average. What does this mean for the carbon footprint of our workspaces? </p>
+                  </div>
+                </div>
+              </div>
+
+       <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> 
+      <!-- CYCLING CARBON CARD  -->
+              <div class="col">
+                <div class="card">
+                  <img src="img/Bike.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Carbon Card 4: did you know?</h5>
+                    <p class="card-text">Did you know there are 155,000 bicycle commuters in London? Why not join them on your way to CodeNode? </p>
+                  </div>
+                </div>
+              </div>
+
+
+       <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> 
+      <!-- VIRTUAL ATTENDANCE CARBON CARD  -->
+              <div class="col">
+                <div class="card">
+                  <img src="img/Virtual-attendee.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Carbon Card 5: did you know?</h5>
+                    <p class="card-text">Did you know virtual events can help reduce carbon footprint for events like this by 94%? </p>
+                  </div>
+                </div>
+              </div>
+
+       <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> 
+      <!-- FLUSHING CARBON CARD  -->
+              <div class="col">
+                <div class="card">
+                  <img src="img/Water.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Carbon Card 6: did you know?</h5>
+                    <p class="card-text">Did you know low-flow toilet flushing at CodeNode can use up to 4x less water? </p>
+                  </div>
+                </div>
+              </div>
+              
+
+
+              
+
+
+            </div>
+          </div>
+    </main>
+    <!-- Begin footer -->
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+          <span class="text-muted">Created by CarbonHackers © 2023.</span>
+        </div>
+    </footer>
+    <!-- Bootstrap JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
